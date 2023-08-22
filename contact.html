@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant KEA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="contact_info">
+        <p>
+          <em>Guldbergsgade 29N 2200 Copenhagen </em>
+        </p>
+        <p>
+          <em> Phone no.: <a href="tel:+4520825370">20 82 53 70</a></em>
+        </p>
+        <p>
+          <em>E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></em>
+        </p>
+      </div>
+      <img src="/img/map.jpg" alt="Drone photo of Restaurant KEA" />
+      <fieldset>
+        <legend>Contact form</legend>
+
+        <form action="mailto:form@kea.dk" autocomplete="on" method="POST">
+          <label for="txtName">Full name</label>
+          <input id="txtName" name="name" type="text" size="20" maxlength="60" required tabindex="1" placeholder="Eg. Anders Andersen" /><br />
+
+          <label for="phone">Phone no. </label>
+          <input id="phone" name="phone" type="tel" size="20" maxlength="60" required tabindex="2" placeholder="Eg. 12345678" /><br />
+
+          <label for="email">Email </label>
+          <input id="email" name="email" type="email" size="20" maxlength="60" required tabindex="3" placeholder="Eg. AndersAndersen@mail.dk" /><br />
+
+          <label for="persons">Persons </label>
+          <input id="persons" name="persons" type="number" size="20" maxlength="60" required tabindex="4" min="1" max="99" /><br />
+
+          <label for="date">Date and time </label>
+          <input id="date" name="date" type="datetime-local" size="20" maxlength="60" required tabindex="5" placeholder="Eg. AndersAndersen@mail.dk" /><br />
+
+          <label for="message">Further infomation</label><br />
+          <textarea id="message" name="message" rows="3" cols="50" placeholder="Write further information here." tabindex="6"></textarea><br />
+          <input type="submit" value="Send" tabindex="7" />
+        </form>
+      </fieldset>
+    </main>
+    <footer><p>&copy; 2023 KEA Development</p></footer>
+  </body>
+</html>
