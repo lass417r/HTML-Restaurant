@@ -1,0 +1,52 @@
+@import "styles.css";
+
+article {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: auto;
+  background-color: var(--colorBgArticle);
+  vertical-align: top;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+article > h2 {
+  font-size: 1.2rem;
+}
+
+p.description {
+  margin-top: 0.5rem;
+}
+
+p.price {
+  position: relative;
+  right: 0;
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: thick solid var(--colorBgNav);
+  border-radius: 0.5rem;
+  color: var(--colorPrice);
+  background-color: var(--colorList);
+  font-weight: bold;
+  text-align: right;
+}
+
+@media only screen and (min-width: 600px) {
+  img {
+    float: right;
+    margin: 0 0 0 0.5rem;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  article {
+    display: inline-block;
+    width: 45%;
+  }
+}

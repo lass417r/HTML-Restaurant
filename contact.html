@@ -4,55 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
     <header>
       <h1>Restaurant KEA</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="selected">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-      <div id="contact_info">
-        <p>
-          <em>Guldbergsgade 29N 2200 Copenhagen </em>
-        </p>
-        <p>
-          <em> Phone no.: <a href="tel:+4520825370">20 82 53 70</a></em>
-        </p>
-        <p>
-          <em>E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></em>
-        </p>
-      </div>
-      <img src="/img/map.jpg" alt="Drone photo of Restaurant KEA" />
-      <fieldset>
-        <legend>Contact form</legend>
+      <section>
+        <img id="contact" src="img/map.jpg" alt="Map" />
+        <address>
+          <p>
+            <span>Guldbergsgade 29N</span>
+            <span>2200 Copenhagen</span>
+          </p>
+          <p>
+            Phone no.:
+            <a href="tel:20825370" title="Phone Restaurant KEA">20 82 53 70</a>
+          </p>
+          <p>
+            E-mail:
+            <a href="mailto:info@restaurantkea.dk" title="Email Restaurant KEA"
+              >info@restaurantkea.dk</a
+            >
+          </p>
+        </address>
+      </section>
 
-        <form action="mailto:form@kea.dk" autocomplete="on" method="POST">
-          <label for="txtName">Full name</label>
-          <input id="txtName" name="name" type="text" size="20" maxlength="60" required tabindex="1" placeholder="Eg. Anders Andersen" /><br />
-
-          <label for="phone">Phone no. </label>
-          <input id="phone" name="phone" type="tel" size="20" maxlength="60" required tabindex="2" placeholder="Eg. 12345678" /><br />
-
-          <label for="email">Email </label>
-          <input id="email" name="email" type="email" size="20" maxlength="60" required tabindex="3" placeholder="Eg. AndersAndersen@mail.dk" /><br />
-
-          <label for="persons">Persons </label>
-          <input id="persons" name="persons" type="number" size="20" maxlength="60" required tabindex="4" min="1" max="99" /><br />
-
-          <label for="date">Date and time </label>
-          <input id="date" name="date" type="datetime-local" size="20" maxlength="60" required tabindex="5" placeholder="Eg. AndersAndersen@mail.dk" /><br />
-
-          <label for="message">Further infomation</label><br />
-          <textarea id="message" name="message" rows="3" cols="50" placeholder="Write further information here." tabindex="6"></textarea><br />
+      <form action="mailto:form@kea.dk" autocomplete="on" method="POST">
+        <fieldset>
+          <legend>Contact form</legend>
+          <div>
+            <label for="txtFullName">Full name</label>
+            <input
+              id="txtFullName"
+              name="name"
+              type="text"
+              maxlength="60"
+              required
+              tabindex="1"
+              placeholder="Eg. Anders Andersen"
+            />
+          </div>
+          <div>
+            <label for="txtPhoneNo">Phone no. </label>
+            <input
+              id="txtPhoneNo"
+              name="phone"
+              type="tel"
+              maxlength="60"
+              required
+              tabindex="2"
+              placeholder="Eg. 12345678"
+            />
+          </div>
+          <div>
+            <label for="txtEmail">Email </label>
+            <input
+              id="txtEmail"
+              name="email"
+              type="email"
+              maxlength="60"
+              required
+              tabindex="3"
+              placeholder="Eg. AndersAndersen@mail.dk"
+            />
+          </div>
+          <div>
+            <label for="txtPersons">Persons </label>
+            <input
+              id="txtPersons"
+              name="persons"
+              type="number"
+              maxlength="60"
+              required
+              tabindex="4"
+              min="1"
+              max="99"
+            />
+          </div>
+          <div>
+            <label for="txtDateTime">Date and time </label>
+            <input
+              id="txtDateTime"
+              name="date"
+              type="datetime-local"
+              maxlength="60"
+              required
+              tabindex="5"
+              placeholder="Eg. AndersAndersen@mail.dk"
+            />
+          </div>
+          <div>
+            <label for="txtInformation">Further infomation</label>
+            <textarea
+              id="txtInformation"
+              name="message"
+              rows="3"
+              cols="50"
+              placeholder="Write further information here."
+              tabindex="6"
+            ></textarea>
+          </div>
           <input type="submit" value="Send" tabindex="7" />
-        </form>
-      </fieldset>
+        </fieldset>
+      </form>
     </main>
     <footer><p>&copy; 2023 KEA Development</p></footer>
   </body>
